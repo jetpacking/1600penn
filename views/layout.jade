@@ -1,7 +1,15 @@
-doctype html
+doctype
 html
   head
-    title= title
+    title #{title}
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
-    block content
+    header
+      h1 Who's been to 1600 Penn?
+    .container
+      .main-content
+        block content
+      .sidebar
+        block sidebar
+    footer
+      p Built by Jetpacking with love from Oakland, CA.
